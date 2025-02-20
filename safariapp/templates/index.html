@@ -1,6 +1,8 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href={% static 'css/styles.css' %}>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -8,6 +10,9 @@
     <title>Django</title>
 </head>
 <body>
+<a href="{% url 'my_about' %}">About</a>
+<a href="{% url 'my_service' %}">services</a>
 <h2>THis is my home page</h2>
+<img src="{% static 'images/steptodown.com158048.jpg' %}" alt="">
 </body>
 </html>

@@ -9,8 +9,5 @@ def index(request):
 def about(request):
     return render(request, "aboutus.html")
 
-def contact(request):
-    return render(request, 'contactus.html')
-
 def service(request):
     return render(request, 'services.html')
